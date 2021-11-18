@@ -66,11 +66,11 @@ public class CustomerActivity {
 	@SuppressWarnings("unused")
 	private void setLinks(CustomerRepresentation custRep) {
 		// Set up the activities that can be performed on ocustomer
-		Link GetCustomer = new Link("List", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId());
-		Link CreateCustomer = new Link("Create", "http://book-store-luc.com:8080/customerservice/customer");
+		Link GetCustomer = new Link("List", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId(), "application/json");
+		Link CreateCustomer = new Link("Create", "http://book-store-luc.com:8080/customerservice/customer", "application/json");
 
-		Link DeleteCustomer = new Link("Delete", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId());
-		Link UpdateCustomer = new Link("Update", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId());
+		Link DeleteCustomer = new Link("Delete", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId(), "application/json");
+		Link UpdateCustomer = new Link("Update", "http://book-store-luc.com:8080/customerservice/customer?customerid=" + custRep.getCustomerId(), "application/json");
 
 		custRep.setLinks(GetCustomer, CreateCustomer, DeleteCustomer, UpdateCustomer);
 	}

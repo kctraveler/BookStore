@@ -12,7 +12,6 @@ import com.ebook.model.customer.CustomerManager;
 import com.ebook.model.item.Product;
 import com.ebook.model.vendor.Vendor;
 import com.ebook.model.vendor.VendorManager;
-import com.ebook.service.representation.CustomerRepresentation;
 import com.ebook.service.vendor.representation.VendorLineRepresentation;
 import com.ebook.service.vendor.representation.VendorLineRequest;
 import com.ebook.service.vendor.representation.VendorRepresentation;

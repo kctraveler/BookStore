@@ -37,7 +37,7 @@ public class ProductActivity {
 			
 			ProductRepresentation prodRep = new ProductRepresentation(prod);
 						
-			prodRep.setLinks();
+			prodRep.setLinks(new Link()); //TODO fix this faked it to make it look right
 			
 			prodReps.add(prodRep);
 		}

@@ -1,4 +1,4 @@
-package com.ebook.service;
+package com.ebook.service.customer.resource;
 
 import java.util.Set;
 import javax.ws.rs.ApplicationPath;
@@ -15,10 +15,10 @@ import javax.ws.rs.core.Application;
 import javax.ws.rs.core.CacheControl;
 
 
-import com.ebook.service.representation.CustomerRepresentation;
-import com.ebook.service.representation.CustomerRequest;
-import com.ebook.service.workflow.CustomerActivity;
 import com.ebook.model.customer.Customer;
+import com.ebook.service.customer.representation.CustomerRepresentation;
+import com.ebook.service.customer.representation.CustomerRequest;
+import com.ebook.service.customer.workflow.CustomerActivity;
 import com.ebook.model.customer.Address;
 
 @Path("/customerservice/")

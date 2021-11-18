@@ -55,5 +55,9 @@ public class ProductRepresentation extends LinkRepresentation {
 		this.price = price;
 	}
 	
+	public void setLinks(Link link) {
+		//TODO
+	}
+	
 
 }
